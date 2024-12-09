@@ -1,0 +1,145 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4b0050; /* Arka plan rengi */
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*user-select: none; /* Tüm sayfa için metin seçimini engelle */
+}
+
+/* Container styling */
+.container, .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    user-select: text; /* İçeriğin seçilmesine izin verir */
+}
+
+/* Content styling */
+.content, .login-content {
+    z-index: 2;
+    max-width: 600px; /* Genişlik sınırı */
+    width: 100%; /* İçeriğin genişliği ekranı aşmasın diye */
+}
+
+.logo h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.check {
+    color: #7d4cf4;
+}
+
+.tagline {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* Buton Stili */
+.btn {
+    background-color: #00b894;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #019374;
+}
+
+/* Subtext ve Footer */
+.subtext {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #00b894;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Background styling */
+.background {
+    position: absolute;
+    top: 0;
+    left: 1; /*0 yapınca sağa atıyor*/
+    width: 100vw; /* Tam ekran genişliği */
+    height: 100vh; /* Tam ekran yüksekliği */
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0.2;
+    user-select: none; /* Arka planın seçilmesini engelle */
+}
+
+.background img {
+    width: 100vw;  /* Görselin genişliğini tam ekran yapmak için */
+    height: 100vh;  /* Görselin yüksekliğini tam ekran yapmak için */
+    object-fit: cover;  /* Görselin alanı tam olarak kaplamasını sağlar */
+    object-position: center center;  /* Görselin ortalanmasını sağlar */
+    pointer-events: none;  /* SVG üzerine tıklanmasını engelleme */
+}
+
+/* Form ve İçerik Alanı Ayrımı */
+form {
+    z-index: 2;
+    position: relative;
+}
+
+/* Input Alanları */
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Şifremi Unuttum Link */
+.forgot-password {
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    color: #00b894;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Yönlendirme Butonu Stil */
+button {
+    cursor: pointer;
+}
