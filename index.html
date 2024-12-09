@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Task.io</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div class="container p-0 mx-0">
+    <div class="row mx-0">
+      <nav class="menu">
+        <ul class="items">
+         
+        </ul>
+      </nav>
+
+      <section class="discussions">
+        <div class="discussion search">
+          <div class="searchbar">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" id="search-discussion" placeholder="Search..."></input>
+          </div>
+        </div>
+
+        <div class="discussions-list"></div>
+
+      </section>
+
+      <section class="chat" style="display: none;">
+        <!-- chat header -->
+        <div class="header-chat">
+          <i class="icon fa fa-user-o" aria-hidden="true"></i>
+          <p class="chat-name"></p>
+          <i class="icon clickable fa fa-ellipsis-h right" aria-hidden="true"></i>
+        </div>
+        <!-- chat header end -->
+
+        <div class="messages-chat">
+
+          
+        </div>
+
+        <!--  footer chat start  --> 
+        <div class="footer-chat">
+          <i class="icon fa fa-smile-o clickable" style="font-size:25pt;" aria-hidden="true"></i>
+          <input type="text" class="write-message" placeholder="Type your message here"></input>
+          <i class="icon send fa fa-paper-plane-o clickable" aria-hidden="true" onclick="sendMessage()"></i>
+        </div>
+        <!-- footer chat end --> 
+      </section>
+    </div>
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
